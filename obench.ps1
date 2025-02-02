@@ -22,8 +22,6 @@ function Show-Usage {
     exit 0
 }
 
-# Parse command-line arguments
-
 if ($Help) { 
     Show-Usage
     exit 0 
