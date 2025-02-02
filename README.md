@@ -66,7 +66,7 @@ Options:
 ### DeepSeek
 
 | System | CPU/GPU | Model | Eval Rate | Power (Peak) |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | ---: | :--- |
 | Pi 5 - 16GB | CPU | deepseek-r1:14b | 1.20 Tokens/s | 13.0 W |
 | Pi 5 - 16GB (AMD Pro W7700<sup>1</sup>) | GPU | deepseek-r1:14b | 19.90 Tokens/s | 164 W |
 | GMKtek G3 Plus (Intel N150) - 16GB | CPU | deepseek-r1:1.5b | 17.02 Tokens/s | 25.6 W |
@@ -75,11 +75,15 @@ Options:
 | AmpereOne A192-32X - 512GB | CPU | deepseek-r1:671b | 4.18 Tokens/s | 477 W |
 | M1 Ultra (48 GPU Core) 64GB | GPU | deepseek-r1:1.5b | 126.21 Tokens/s | N/A |
 | M1 Ultra (48 GPU Core) 64GB | GPU | deepseek-r1:14b | 35.89 Tokens/s | N/A |
+| M1 Macbook Air (8 GPU Core) 8GB | GPU | deepseek-r1:8b | 9.09 Tokens/s | N/A |
+| Intel i5 13500 (AMD 7800XT) | GPU | deepseek-r1:8b | 67.99 Tokens/s | N/A |
+| Intel i5 13500 (AMD 7800XT) | GPU | deepseek-r1:14b | 37.53 Tokens/s | N/A |
+
 
 ### Llama
 
 | System | CPU/GPU | Model | Eval Rate | Power (Peak) |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | ---: | :--- |
 | Pi 400 - 4GB | CPU | llama3.2:3b | 1.60 Tokens/s | 6 W |
 | Pi 5 - 8GB | CPU | llama3.2:3b | 4.61 Tokens/s | 13.9 W |
 | Pi 5 - 8GB | CPU | llama3.1:8b | 1.99 Tokens/s | 13.2 W |
@@ -102,6 +106,9 @@ Options:
 | Pi 5 - 8GB (AMD Pro W7700<sup>1</sup>) | GPU | llama3.2:3b | 56.14 Tokens/s | 145 W |
 | Pi 5 - 8GB (AMD Pro W7700<sup>1</sup>) | GPU | llama3.1:8b | 39.87 Tokens/s | 52 W |
 | Pi 5 - 8GB (AMD Pro W7700<sup>1</sup>) | GPU | llama2:13b | 4.38 Tokens/s | 108 W |
+| M1 Macbook Air (8 GB) | GPU | llama3.2:8b | 22.95 Tokens/s | N/A |
+| M1 Macbook Air (8 GB) | GPU | llama3.1:8b | 9.18 Tokens/s | N/A |
+| M1 Macbook Air (8 GB) | GPU | llama2:7b | 14.12 Tokens/s | N/A |
 | M4 Mac mini (10 core - 32GB) | GPU | llama3.2:3b | 41.31 Tokens/s | 30.1 W |
 | M4 Mac mini (10 core - 32GB) | GPU | llama3.1:8b | 20.95 Tokens/s | 29.4 W |
 | M4 Mac mini (10 core - 32GB) | GPU | llama2:13b | 13.60 Tokens/s | 29.8 W |
@@ -111,6 +118,9 @@ Options:
 | M1 Max Mac Studio (10 core - 64GB) | GPU | llama3.1:70b | 7.25 Tokens/s | N/A |
 | M1 Ultra (48 GPU Core) 64GB | GPU | llama3.2:3b | 108.67 Tokens/s | N/A |
 | M1 Ultra (48 GPU Core) 64GB | GPU | llama3.1:8b | 62.28 Tokens/s | N/A |
+| Intel i5 13500 (AMD 7800XT) | GPU | llama3.1:8b | 37.83 Tokens/s | N/A |
+| Intel i5 13500 (AMD 7800XT) | GPU | llama3.2:8b | 122.38 Tokens/s | N/A |
+| Intel i5 13500 (AMD 7800XT) | GPU | llama2:7b | 62.51 Tokens/s | N/A |
 | Ryzen 9 7900X (Nvidia 4090) | GPU | llama3.2:3b | 237.05 Tokens/s | N/A |
 | Ryzen 9 7900X (Nvidia 4090) | GPU | llama3.1:8b | 148.09 Tokens/s | N/A |
 | Ryzen 9 7900X (Nvidia 4090) | GPU/CPU | llama3.1:70b | 3.10 Tokens/s | N/A |
@@ -135,6 +145,20 @@ Options:
 | AmpereOne A192-32X (512GB) | CPU | llama3.1:405b | 0.90 Tokens/s | N/A |
 
 <sup>1</sup> These GPUs were tested using `llama.cpp` with Vulkan support.
+
+## qwen
+
+| System | CPU/GPU | Model | Eval Rate | Power (Peak) |
+| :--- | :--- | :--- | ---: | :--- |
+| Intel i5 13500 (AMD 7800XT) | GPU | qwen:14b | 3.56 Tokens/s | N/A |
+| Intel i5 13500 (AMD 7800XT) | GPU | qwen2.5:14b | 4.01 Tokens/s | N/A |
+
+## phi
+
+| System | CPU/GPU | Model | Eval Rate | Power (Peak) |
+| :--- | :--- | :--- | ---: | :--- |
+| Intel i5 13500 (AMD 7800XT) | GPU | phi:14b | 41.33 Tokens/s | N/A |
+
 
 ## Further Reading
 
