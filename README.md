@@ -51,6 +51,8 @@ Options:
 | GMKtek G3 Plus (Intel N150) - 16GB | CPU | deepseek-r1:8b | 3.84 Tokens/s | 29.8 W |
 | GMKtek G3 Plus (Intel N150) - 16GB | CPU | deepseek-r1:14b | 2.13 Tokens/s | 30.3 W |
 | HiFive Premier P550 (4-core RISC-V) | CPU | deepseek-r1:1.5b | 0.49 Tokens/s | 13.5 W |
+| Radxa Orion O6 - 16GB | CPU | deepseek-r1:14b | 4.33 Tokens/s | 34.7 W |
+| Radxa Orion O6 - 16GB (Nvidia RTX 3080 Ti) | GPU | deepseek-r1:14b | 64.58 Tokens/s | 465 W |
 | AmpereOne A192-32X - 512GB | CPU | deepseek-r1:671b | 4.18 Tokens/s | 477 W |
 | M1 Ultra (48 GPU Core) 64GB | GPU | deepseek-r1:1.5b | 126.21 Tokens/s | N/A |
 | M1 Ultra (48 GPU Core) 64GB | GPU | deepseek-r1:14b | 35.89 Tokens/s | N/A |
@@ -93,6 +95,8 @@ Options:
 | HiFive Premier P550 (4-core RISC-V) | CPU | llama3.2:3b | 0.24 Tokens/s | 13.5 W |
 | HiFive Premier P550 (4-core RISC-V) | CPU | llama3.1:8b | 0.10 Tokens/s | 13.6 W |
 | HiFive Premier P550 (4-core RISC-V) | CPU | llama2:13b | 0.11 Tokens/s | 13.6 W |
+| Radxa Orion O6 - 16GB | CPU | llama3.1:8b | 7.60 Tokens/s | 34.2 W |
+| Radxa Orion O6 - 16GB (Nvidia RTX 3080 Ti) | GPU | llama3.1:8b | 112.72 Tokens/s | 471 W |
 | Ryzen 9 7900X (Nvidia 4090) | GPU | llama3.2:3b | 237.05 Tokens/s | N/A |
 | Ryzen 9 7900X (Nvidia 4090) | GPU | llama3.1:8b | 148.09 Tokens/s | N/A |
 | Ryzen 9 7900X (Nvidia 4090) | GPU/CPU | llama3.1:70b | 3.10 Tokens/s | N/A |
