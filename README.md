@@ -2,6 +2,8 @@
 
 [![.github/workflows/shellcheck.yaml](https://github.com/geerlingguy/ollama-benchmark/actions/workflows/shellcheck.yaml/badge.svg)](https://github.com/geerlingguy/ollama-benchmark/actions/workflows/shellcheck.yaml)
 
+## Linux
+
 This bash script benchmarks ollama on any system where it is installed.
 
 For a quick installation, try:
@@ -26,7 +28,7 @@ Then run this benchmark script:
 
 Uninstall Ollama following the [official uninstall instructions](https://github.com/ollama/ollama/blob/main/docs/linux.md#uninstall).
 
-## CLI Options
+###CLI Options
 
 ```
 Usage: ./obench.sh [OPTIONS]
@@ -38,6 +40,26 @@ Options:
  --ollama-bin    Point to ollama executable or command (e.g if using Docker)
  --markdown      Format output as markdown
 ```
+
+## Windows
+
+This PowerShell script benchmarks ollama on any system where it is installed.
+
+> Make sure you have Ollama installed on your windows machine
+
+### CLI Options
+
+```
+Usage: .\obench.ps1 [OPTIONS]
+Options:
+ -Help      Display this help message
+ -Default   Run a benchmark using some default small models
+ -Model     Specify a model to use
+ -Count     Number of times to run the benchmark
+ -Ollama-bin    Point to ollama executable or command (e.g if using Docker)
+ -Markdown      Format output as markdown
+```
+
 
 ## Findings
 
