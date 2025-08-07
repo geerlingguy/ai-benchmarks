@@ -2,7 +2,7 @@
 
 [![.github/workflows/shellcheck.yaml](https://github.com/geerlingguy/ollama-benchmark/actions/workflows/shellcheck.yaml/badge.svg)](https://github.com/geerlingguy/ollama-benchmark/actions/workflows/shellcheck.yaml)
 
-This bash script benchmarks ollama on any system where it is installed.
+This bash script benchmarks LLMs using [Ollama](https://ollama.com), and also aggregates test data using other LLM tools such as [llama.cpp](https://github.com/ggml-org/llama.cpp).
 
 For a quick installation, try:
 
@@ -41,88 +41,70 @@ Options:
 
 ## Findings
 
-### DeepSeek
+### DeepSeek R1 14b
 
 | System | CPU/GPU | Model | Eval Rate | Power (Peak) |
 | :--- | :--- | :--- | :--- | :--- |
-| Pi 5 - 16GB | CPU | deepseek-r1:14b | 1.20 Tokens/s | 13.0 W |
-| Pi 5 - 16GB (AMD Pro W7700<sup>1</sup>) | GPU | deepseek-r1:14b | 19.90 Tokens/s | 164 W |
-| GMKtek G3 Plus (Intel N150) - 16GB | CPU | deepseek-r1:1.5b | 17.99 Tokens/s | 29.9 W |
-| GMKtek G3 Plus (Intel N150) - 16GB | CPU | deepseek-r1:8b | 3.84 Tokens/s | 29.8 W |
-| GMKtek G3 Plus (Intel N150) - 16GB | CPU | deepseek-r1:14b | 2.13 Tokens/s | 30.3 W |
-| HiFive Premier P550 (4-core RISC-V) | CPU | deepseek-r1:1.5b | 0.49 Tokens/s | 13.5 W |
-| Radxa Orion O6 - 16GB | CPU | deepseek-r1:14b | 4.33 Tokens/s | 34.7 W |
-| Radxa Orion O6 - 16GB (Nvidia RTX 3080 Ti) | GPU | deepseek-r1:14b | 64.58 Tokens/s | 465 W |
-| AmpereOne A192-32X - 512GB | CPU | deepseek-r1:671b | 4.18 Tokens/s | 477 W |
-| M1 Ultra (48 GPU Core) 64GB | GPU | deepseek-r1:1.5b | 126.21 Tokens/s | N/A |
-| M1 Ultra (48 GPU Core) 64GB | GPU | deepseek-r1:14b | 35.89 Tokens/s | N/A |
+| [Pi 5 - 16GB](https://github.com/geerlingguy/ollama-benchmark/issues/7) | CPU | deepseek-r1:14b | 1.20 Tokens/s | 13.0 W |
+| [Pi 5 - 16GB (AMD Pro W7700<sup>1</sup>)](https://github.com/geerlingguy/ollama-benchmark/issues/9) | GPU | deepseek-r1:14b | 19.90 Tokens/s | 164 W |
+| [GMKtek G3 Plus (Intel N150) - 16GB](https://github.com/geerlingguy/ollama-benchmark/issues/12) | CPU | deepseek-r1:14b | 2.13 Tokens/s | 30.3 W |
+| [Radxa Orion O6 - 16GB](https://github.com/geerlingguy/ollama-benchmark/issues/13) | CPU | deepseek-r1:14b | 4.33 Tokens/s | 34.7 W |
+| [Radxa Orion O6 - 16GB (Nvidia RTX 3080 Ti)](https://github.com/geerlingguy/ollama-benchmark/issues/13) | GPU | deepseek-r1:14b | 64.58 Tokens/s | 465 W |
+| [M1 Ultra (48 GPU Core) 64GB](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU | deepseek-r1:14b | 35.89 Tokens/s | N/A |
+| [Framework Mainboard (128GB)](https://github.com/geerlingguy/ollama-benchmark/issues/21#issuecomment-3164567688) | CPU | deepseek-r1:14b | 11.37 Tokens/s | 140W |
 
-### Llama
+### DeepSeek R1 671b
 
 | System | CPU/GPU | Model | Eval Rate | Power (Peak) |
 | :--- | :--- | :--- | :--- | :--- |
-| Pi 400 - 4GB | CPU | llama3.2:3b | 1.60 Tokens/s | 6 W |
-| Pi 5 - 8GB | CPU | llama3.2:3b | 4.61 Tokens/s | 13.9 W |
-| Pi 5 - 8GB | CPU | llama3.1:8b | 1.99 Tokens/s | 13.2 W |
-| Pi 5 - 8GB | CPU | llama2:13b | DNF | DNF |
-| Pi 5 - 16GB | CPU | llama3.2:3b | 4.88 Tokens/s | 11.9 W |
-| Pi 5 - 16GB | CPU | llama3.1:8b | 2.17 Tokens/s | 11.6 W |
-| Pi 5 - 16GB | CPU | llama2:13b | 1.36 Tokens/s | 10.9 W |
-| GMKtec G3 Plus (Intel N150) - 16GB | CPU | llama3.2:3b | 9.06 Tokens/s | 26.4 W |
-| GMKtec G3 Plus (Intel N150) - 16GB | CPU | llama3.1:8b | 3.91 Tokens/s | 29.8 W |
-| GMKtec G3 Plus (Intel N150) - 16GB | CPU | llama2:13b | 2.57 Tokens/s | 28.5 W |
-| Pi 5 - 8GB (AMD RX 6500 XT<sup>1</sup>) | GPU | llama3.2:3b | 39.82 Tokens/s | 88 W |
-| Pi 5 - 8GB (AMD RX 6500 XT<sup>1</sup>) | GPU | llama3.1:8b | 22.42 Tokens/s | 95.7 W |
-| Pi 5 - 8GB (AMD RX 6500 XT<sup>1</sup>) 8GB | GPU | llama2:13b | 2.03 Tokens/s | 48.3 W |
-| Pi 5 - 8GB (AMD RX 6700 XT<sup>1</sup>) 12GB | GPU | llama3.2:3b | 49.01 Tokens/s | 94 W |
-| Pi 5 - 8GB (AMD RX 6700 XT<sup>1</sup>) 12GB | GPU | llama3.1:8b | 39.70 Tokens/s | 135 W |
-| Pi 5 - 8GB (AMD RX 6700 XT<sup>1</sup>) 12GB | GPU | llama2:13b | 3.98 Tokens/s | 95 W |
-| Pi 5 - 8GB (AMD RX 7600<sup>1</sup>) | GPU | llama3.2:3b | 48.47 Tokens/s | 156 W |
-| Pi 5 - 8GB (AMD RX 7600<sup>1</sup>) | GPU | llama3.1:8b | 32.60 Tokens/s | 174 W |
-| Pi 5 - 8GB (AMD RX 7600<sup>1</sup>) | GPU | llama2:13b | 2.42 Tokens/s | 106 W |
-| Pi 5 - 8GB (AMD Pro W7700<sup>1</sup>) | GPU | llama3.2:3b | 56.14 Tokens/s | 145 W |
-| Pi 5 - 8GB (AMD Pro W7700<sup>1</sup>) | GPU | llama3.1:8b | 39.87 Tokens/s | 52 W |
-| Pi 5 - 8GB (AMD Pro W7700<sup>1</sup>) | GPU | llama2:13b | 4.38 Tokens/s | 108 W |
-| M4 Mac mini (10 core - 32GB) | GPU | llama3.2:3b | 41.31 Tokens/s | 30.1 W |
-| M4 Mac mini (10 core - 32GB) | GPU | llama3.1:8b | 20.95 Tokens/s | 29.4 W |
-| M4 Mac mini (10 core - 32GB) | GPU | llama2:13b | 13.60 Tokens/s | 29.8 W |
+| [AmpereOne A192-32X - 512GB](https://github.com/geerlingguy/ollama-benchmark/issues/10) | CPU | deepseek-r1:671b | 4.18 Tokens/s | 477 W |
+
+### Llama 3.2:3b
+
+| System | CPU/GPU | Model | Eval Rate | Power (Peak) |
+| :--- | :--- | :--- | :--- | :--- |
+| [Pi 400 - 4GB](https://github.com/geerlingguy/ollama-benchmark/commit/96bab78f2a8e6c996c6810c5e2119274e3eb401a) | CPU | llama3.2:3b | 1.60 Tokens/s | 6 W |
+| [Pi 5 - 8GB](https://github.com/geerlingguy/ollama-benchmark/issues/1) | CPU | llama3.2:3b | 4.61 Tokens/s | 13.9 W |
+| [Pi 5 - 16GB](https://github.com/geerlingguy/ollama-benchmark/issues/70) | CPU | llama3.2:3b | 4.88 Tokens/s | 11.9 W |
+| [GMKtec G3 Plus (Intel N150) - 16GB](https://github.com/geerlingguy/ollama-benchmark/issues/12) | CPU | llama3.2:3b | 9.06 Tokens/s | 26.4 W |
+| [Pi 5 - 8GB (AMD RX 6500 XT<sup>1</sup>)](https://github.com/geerlingguy/ollama-benchmark/issues/1) | GPU | llama3.2:3b | 39.82 Tokens/s | 88 W |
+| [Pi 5 - 8GB (AMD RX 6700 XT<sup>1</sup>) 12GB](https://github.com/geerlingguy/ollama-benchmark/issues/1) | GPU | llama3.2:3b | 49.01 Tokens/s | 94 W |
+| [Pi 5 - 8GB (AMD RX 7600<sup>1</sup>)](https://github.com/geerlingguy/ollama-benchmark/issues/1) | GPU | llama3.2:3b | 48.47 Tokens/s | 156 W |
+| [Pi 5 - 8GB (AMD Pro W7700<sup>1</sup>)](https://github.com/geerlingguy/ollama-benchmark/issues/9) | GPU | llama3.2:3b | 56.14 Tokens/s | 145 W |
+| [M4 Mac mini (10 core - 32GB)](https://github.com/geerlingguy/ollama-benchmark/issues/2) | GPU | llama3.2:3b | 41.31 Tokens/s | 30.1 W |
 | M1 Max Mac Studio (10 core - 64GB) | GPU | llama3.2:3b | 59.38 Tokens/s | N/A |
-| M1 Max Mac Studio (10 core - 64GB) | GPU | llama3.1:8b | 45.32 Tokens/s | N/A |
-| M1 Max Mac Studio (10 core - 64GB) | GPU | llama2:13b | 32.85 Tokens/s | N/A |
+| [M1 Ultra (48 GPU Core) 64GB](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU | llama3.2:3b | 108.67 Tokens/s | N/A |
+| [HiFive Premier P550 (4-core RISC-V)](https://github.com/geerlingguy/ollama-benchmark/issues/20) | CPU | llama3.2:3b | 0.24 Tokens/s | 13.5 W |
+| [Ryzen 9 7900X (Nvidia 4090)](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU | llama3.2:3b | 237.05 Tokens/s | N/A |
+| [Intel 13900K (Nvidia 5090)](https://github.com/geerlingguy/ollama-benchmark/pull/18) | GPU | llama3.2:3b | 271.40 Tokens/s | N/A |
+| [Intel 13900K (Nvidia 4090)](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU | llama3.2:3b | 216.48 Tokens/s | N/A |
+| [Ryzen 9 9950X (AMD 7900 XT)](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU | llama3.2:3b | 131.2 Tokens/s | N/A |
+| [Ryzen 9 7950X (Nvidia 4080)](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU | llama3.2:3b | 204.45 Tokens/s | N/A |
+| [Ryzen 9 7950X (Nvidia 4070 Ti Super)](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU | llama3.2:3b | 198.95 Tokens/s | N/A |
+| [Ryzen 9 5950X (Nvidia 4070)](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU | llama3.2:3b | 160.72 Tokens/s | N/A |
+| [System76 Thelio Astra (Nvidia A400)](https://github.com/geerlingguy/ollama-benchmark/issues/5) | GPU | llama3.2:3b | 35.51 Tokens/s | 167 W |
+| [System76 Thelio Astra (Nvidia A4000)](https://github.com/geerlingguy/ollama-benchmark/issues/5) | GPU | llama3.2:3b | 90.92 Tokens/s | 244 W |
+| [System76 Thelio Astra (AMD Pro W7700<sup>1</sup>)](https://github.com/geerlingguy/ollama-benchmark/issues/5) | GPU | llama3.2:3b | 89.31 Tokens/s | 261 W |
+| [AmpereOne A192-32X (512GB)](https://github.com/geerlingguy/ollama-benchmark/issues/10) | CPU | llama3.2:3b | 23.52 Tokens/s | N/A |
+| [Framework Mainboard (128GB)](https://github.com/geerlingguy/ollama-benchmark/issues/21#issuecomment-3164568218) | GPU | llama3.2:3b | 88.14 Tokens/s | 133W |
+
+### Llama 3.1:70b
+
+| System | CPU/GPU | Model | Eval Rate | Power (Peak) |
+| :--- | :--- | :--- | :--- | :--- |
 | M1 Max Mac Studio (10 core - 64GB) | GPU | llama3.1:70b | 7.25 Tokens/s | N/A |
-| M1 Ultra (48 GPU Core) 64GB | GPU | llama3.2:3b | 108.67 Tokens/s | N/A |
-| M1 Ultra (48 GPU Core) 64GB | GPU | llama3.1:8b | 62.28 Tokens/s | N/A |
-| HiFive Premier P550 (4-core RISC-V) | CPU | llama3.2:3b | 0.24 Tokens/s | 13.5 W |
-| HiFive Premier P550 (4-core RISC-V) | CPU | llama3.1:8b | 0.10 Tokens/s | 13.6 W |
-| HiFive Premier P550 (4-core RISC-V) | CPU | llama2:13b | 0.11 Tokens/s | 13.6 W |
-| Radxa Orion O6 - 16GB | CPU | llama3.1:8b | 7.60 Tokens/s | 34.2 W |
-| Radxa Orion O6 - 16GB (Nvidia RTX 3080 Ti) | GPU | llama3.1:8b | 112.72 Tokens/s | 471 W |
-| Ryzen 9 7900X (Nvidia 4090) | GPU | llama3.2:3b | 237.05 Tokens/s | N/A |
-| Ryzen 9 7900X (Nvidia 4090) | GPU | llama3.1:8b | 148.09 Tokens/s | N/A |
-| Ryzen 9 7900X (Nvidia 4090) | GPU/CPU | llama3.1:70b | 3.10 Tokens/s | N/A |
-| Intel 13900K (Nvidia 5090) | GPU | llama3.2:3b | 271.40 Tokens/s | N/A |
-| Intel 13900K (Nvidia 5090) | GPU | llama3.1:8b | 178.73 Tokens/s | N/A |
-| Intel 13900K (Nvidia 4090) | GPU | llama3.2:3b | 216.48 Tokens/s | N/A |
-| Intel 13900K (Nvidia 4090) | GPU | llama3.1:8b | 136.55 Tokens/s | N/A |
-| Ryzen 9 9950X (AMD 7900 XT) | GPU | llama3.2:3b | 131.2 Tokens/s | N/A |
-| Ryzen 9 7950X (Nvidia 4080) | GPU | llama3.2:3b | 204.45 Tokens/s | N/A |
-| Ryzen 9 7950X (Nvidia 4070 Ti Super) | GPU | llama3.2:3b | 198.95 Tokens/s | N/A |
-| Ryzen 9 5950X (Nvidia 4070) | GPU | llama3.2:3b | 160.72 Tokens/s | N/A |
-| System76 Thelio Astra (Nvidia A400) | GPU | llama3.2:3b | 35.51 Tokens/s | 167 W |
-| System76 Thelio Astra (Nvidia A400) | CPU/GPU | llama3.1:8b | 2.79 Tokens/s | 190 W |
-| System76 Thelio Astra (Nvidia A400) | CPU/GPU | llama2:13b | 7.93 Tokens/s | 223 W |
-| System76 Thelio Astra (Nvidia A4000) | GPU | llama3.2:3b | 90.92 Tokens/s | 244 W |
-| System76 Thelio Astra (Nvidia A4000) | GPU | llama3.1:8b | 59.11 Tokens/s | 250 W |
-| System76 Thelio Astra (Nvidia A4000) | GPU | llama2:13b | 44.00 Tokens/s | 254 W |
-| System76 Thelio Astra (AMD Pro W7700<sup>1</sup>) | GPU | llama3.2:3b | 89.31 Tokens/s | 261 W |
-| System76 Thelio Astra (AMD Pro W7700<sup>1</sup>) | GPU | llama3.1:8b | 56.92 Tokens/s | 278 W |
-| System76 Thelio Astra (AMD Pro W7700<sup>1</sup>) | CPU/GPU | llama2:13b | 8.41 Tokens/s | 187 W |
-| AmpereOne A192-32X (512GB) | CPU | llama3.2:3b | 23.52 Tokens/s | N/A |
-| AmpereOne A192-32X (512GB) | CPU | llama3.1:8b | 17.47 Tokens/s | N/A |
-| AmpereOne A192-32X (512GB) | CPU | llama3.1:70b | 3.86 Tokens/s | N/A |
-| AmpereOne A192-32X (512GB) | CPU | llama3.1:405b | 0.90 Tokens/s | N/A |
+| [Ryzen 9 7900X (Nvidia 4090)](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU/CPU | llama3.1:70b | 3.10 Tokens/s | N/A |
+| [AmpereOne A192-32X (512GB)](https://github.com/geerlingguy/ollama-benchmark/issues/10) | CPU | llama3.1:70b | 3.86 Tokens/s | N/A |
+| [Framework Mainboard (128GB)](https://github.com/geerlingguy/ollama-benchmark/issues/21#issuecomment-3164570464) | GPU | llama3.1:70b | 4.47 Tokens/s | 139W |
 
 <sup>1</sup> These GPUs were tested using `llama.cpp` with Vulkan support.
+
+### Llama 3.1:405b
+
+| System | CPU/GPU | Model | Eval Rate | Power (Peak) |
+| :--- | :--- | :--- | :--- | :--- |
+| [AmpereOne A192-32X (512GB)](https://github.com/geerlingguy/ollama-benchmark/issues/10) | CPU | llama3.1:405b | 0.90 Tokens/s | N/A |
+| [Framework Mainboard Cluster (512GB)](https://github.com/geerlingguy/ollama-benchmark/issues/21#issuecomment-3164569199) | GPU | llama3.1:405b | 0.71 Tokens/s | N/A |
 
 ## Further Reading
 
