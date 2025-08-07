@@ -61,8 +61,8 @@ Options:
 
 ### Llama 3.2:3b
 
-| System | CPU/GPU Rate | Power (Peak) |
-| :--- | :--- | :--- |
+| System | CPU/GPU | Eval Rate | Power (Peak) |
+| :--- | :--- | :--- | :--- |
 | [Pi 400 - 4GB](https://github.com/geerlingguy/ollama-benchmark/commit/96bab78f2a8e6c996c6810c5e2119274e3eb401a) | CPU | 1.60 Tokens/s | 6 W |
 | [Pi 5 - 8GB](https://github.com/geerlingguy/ollama-benchmark/issues/1) | CPU | 4.61 Tokens/s | 13.9 W |
 | [Pi 5 - 16GB](https://github.com/geerlingguy/ollama-benchmark/issues/70) | CPU | 4.88 Tokens/s | 11.9 W |
@@ -90,8 +90,8 @@ Options:
 
 ### Llama 3.1:70b
 
-| System | CPU/GPU Rate | Power (Peak) |
-| :--- | :--- | :--- |
+| System | CPU/GPU | Eval Rate | Power (Peak) |
+| :--- | :--- | :--- | :--- |
 | M1 Max Mac Studio (10 core - 64GB) | GPU | 7.25 Tokens/s | N/A |
 | [Ryzen 9 7900X (Nvidia 4090)](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU/CPU | 3.10 Tokens/s | N/A |
 | [AmpereOne A192-32X (512GB)](https://github.com/geerlingguy/ollama-benchmark/issues/10) | CPU | 3.86 Tokens/s | N/A |
