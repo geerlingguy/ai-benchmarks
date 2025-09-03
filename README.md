@@ -96,6 +96,7 @@ Options:
 | [Ryzen 9 7900X (Nvidia 4090)](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU/CPU | 3.10 Tokens/s | N/A |
 | [AmpereOne A192-32X (512GB)](https://github.com/geerlingguy/ollama-benchmark/issues/10) | CPU | 3.86 Tokens/s | N/A |
 | [Framework Mainboard (128GB)](https://github.com/geerlingguy/ollama-benchmark/issues/21#issuecomment-3164570464) | GPU | 4.47 Tokens/s | 139W |
+| [Raspberry Pi CM5 Cluster (10x 16GB)](https://github.com/geerlingguy/beowulf-ai-cluster/issues/6#issuecomment-3238338502) | CPU | 0.85 Tokens/s | 70W |
 
 <sup>1</sup> These GPUs were tested using `llama.cpp` with Vulkan support.
 
