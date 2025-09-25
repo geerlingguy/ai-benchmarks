@@ -66,6 +66,7 @@ Options:
 | [Pi 400 - 4GB](https://github.com/geerlingguy/ollama-benchmark/commit/96bab78f2a8e6c996c6810c5e2119274e3eb401a) | CPU | 1.60 Tokens/s | 6 W |
 | [Pi 5 - 8GB](https://github.com/geerlingguy/ollama-benchmark/issues/1) | CPU | 4.61 Tokens/s | 13.9 W |
 | [Pi 5 - 16GB](https://github.com/geerlingguy/ollama-benchmark/issues/70) | CPU | 4.88 Tokens/s | 11.9 W |
+| [Pi 500+ - 16GB](https://github.com/geerlingguy/ollama-benchmark/issues/24) | CPU | 5.55 Tokens/s | 13 W |
 | [GMKtec G3 Plus (Intel N150) - 16GB](https://github.com/geerlingguy/ollama-benchmark/issues/12) | CPU | 9.06 Tokens/s | 26.4 W |
 | [Pi 5 - 8GB (AMD RX 6500 XT<sup>1</sup>)](https://github.com/geerlingguy/ollama-benchmark/issues/1) | GPU | 39.82 Tokens/s | 88 W |
 | [Pi 5 - 8GB (AMD RX 6700 XT<sup>1</sup>) 12GB](https://github.com/geerlingguy/ollama-benchmark/issues/1) | GPU | 49.01 Tokens/s | 94 W |
