@@ -73,6 +73,7 @@ Options:
 | [Pi 5 - 8GB (AMD RX 7600<sup>1</sup>)](https://github.com/geerlingguy/ollama-benchmark/issues/1) | GPU | 48.47 Tokens/s | 156 W |
 | [Pi 5 - 8GB (AMD Pro W7700<sup>1</sup>)](https://github.com/geerlingguy/ollama-benchmark/issues/9) | GPU | 56.14 Tokens/s | 145 W |
 | [Pi 500+ - 16GB (AMD RX 7900 XT<sup>1</sup>)](https://github.com/geerlingguy/ollama-benchmark/issues/23) | GPU | 108.58 Tokens/s | 315 W |
+| [Pi 500+ - 16GB (AMD RX 9070 XT<sup>1</sup>)](https://github.com/geerlingguy/ollama-benchmark/issues/25) | GPU | 89.63 Tokens/s | 304 W |
 | [M4 Mac mini (10 core - 32GB)](https://github.com/geerlingguy/ollama-benchmark/issues/2) | GPU | 41.31 Tokens/s | 30.1 W |
 | M1 Max Mac Studio (10 core - 64GB) | GPU | 59.38 Tokens/s | N/A |
 | [M1 Ultra (48 GPU Core) 64GB](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU | 108.67 Tokens/s | N/A |
