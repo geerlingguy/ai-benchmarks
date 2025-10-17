@@ -114,6 +114,7 @@ Options:
 | M1 Max Mac Studio (10 core - 64GB) | GPU | 59.38 Tokens/s | N/A |
 | [M1 Ultra (48 GPU Core) 64GB](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU | 108.67 Tokens/s | N/A |
 | [HiFive Premier P550 (4-core RISC-V)](https://github.com/geerlingguy/ollama-benchmark/issues/20) | CPU | 0.24 Tokens/s | 13.5 W |
+| [DC-ROMA Mainboard II (8-core RISC-V)](https://github.com/geerlingguy/ollama-benchmark/issues/28) | CPU | 0.31 Tokens/s | 30.6 W |
 | [Ryzen 9 7900X (Nvidia 4090)](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU | 237.05 Tokens/s | N/A |
 | [Intel 13900K (Nvidia 5090)](https://github.com/geerlingguy/ollama-benchmark/pull/18) | GPU | 271.40 Tokens/s | N/A |
 | [Intel 13900K (Nvidia 4090)](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU | 216.48 Tokens/s | N/A |
