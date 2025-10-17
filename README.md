@@ -1,10 +1,38 @@
-# ollama-benchmark
+# AI/LLM Benchmarks (Ollama and llama.cpp)
 
-[![.github/workflows/shellcheck.yaml](https://github.com/geerlingguy/ollama-benchmark/actions/workflows/shellcheck.yaml/badge.svg)](https://github.com/geerlingguy/ollama-benchmark/actions/workflows/shellcheck.yaml)
+[![.github/workflows/shellcheck.yaml](https://github.com/geerlingguy/ai-benchmarks/actions/workflows/shellcheck.yaml/badge.svg)](https://github.com/geerlingguy/ai-benchmarks/actions/workflows/shellcheck.yaml)
 
-This bash script benchmarks LLMs using [Ollama](https://ollama.com), and also aggregates test data using other LLM tools such as [llama.cpp](https://github.com/ggml-org/llama.cpp).
+This repository contains AI/LLM benchmarks and benchmarking data compiled by Jeff Geerling, using a combination of [Ollama](https://ollama.com) and [llama.cpp](https://github.com/ggml-org/llama.cpp).
 
-For a quick installation, try:
+Benchmarking AI models can be a bit daunting, because you have to deal with hardware issues, OS issues, driver issues, stability issues... and that's all before deciding on:
+
+  1. What _models_ to benchmark (which quantization, what particular gguf, etc.?)
+  2. _How_ to benchmark the models (what context size, with or without features like flash attention, etc.?).
+  3. What _results_ to worry about (prompt processing speed, generated tokens per second, etc.?)
+
+## Llama.cpp Benchmark
+
+_Most_ of the time I rely on llama.cpp, as it is more broadly compatible, works with more models on more systems, and incorporates features that are useful for hardware acceleration more quickly than Ollama. For example, [Vulkan was supported for years in llama.cpp prior to Ollama supporting it](https://github.com/ollama/ollama/issues/2033). Vulkan enables many AMD and Intel GPUs (as well as other Vulkan-compatible iGPUs) to work for LLM inference.
+
+Right now I don't have a particular _script_ to assist with my llama.cpp benchmarks, I just pull a model manually, then use llama.cpp's built-in `llama-bench` utility:
+
+```
+# Download a model (gguf)
+cd models && wget https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_K_M.gguf && cd ..
+
+# Run a benchmark
+./build/bin/llama-bench -m models/Llama-3.2-3B-Instruct-Q4_K_M.gguf -n 128 -p 512,4096 -pg 4096,128 -ngl 99 -r 2
+```
+
+You can change various `llama-bench` options to test different prompt and context sizes, enable or disable features like MMIO and Flash Attention, etc.
+
+I generally start with Llama 3.2:3B Q4_K_M because it's a small model (only 2GB), and it doesn't crash even with smaller systems like SBCs.
+
+## Ollama Benchmark
+
+The first and simplest benchmarks I often run—at least on systems where Ollama is supported and runs well—is my `obench.sh` script. It can run a predefined benchmark on Ollama one to many times, and generate an average score.
+
+For a quick installation of Ollama, try:
 
 ```
 curl -fsSL https://ollama.com/install.sh | sh
@@ -26,7 +54,13 @@ Then run this benchmark script:
 
 Uninstall Ollama following the [official uninstall instructions](https://github.com/ollama/ollama/blob/main/docs/linux.md#uninstall).
 
-## CLI Options
+For the benchmarks I save in this project, I usually run the following benchmark command, which generates an average from three runs and prints it in markdown:
+
+```
+./obench.sh -m llama3.2:3b -c 3 --markdown
+```
+
+### Ollama benchmark CLI Options
 
 ```
 Usage: ./obench.sh [OPTIONS]
@@ -114,10 +148,10 @@ Options:
 
 ## Further Reading
 
-This script is just a quick way of comparing _one aspect_ of generative AI performance. There are _many other_ aspects that are as important (or more important) this script does _not_ cover.
+These benchmarks are in no way comprehensive, and I normally only compare _one aspect_ of generative AI performance—inference tokens per second. There are _many other_ aspects that are as important (or more important) my benchmarking does _not_ cover, though sometimes I get deeper into the weeds in individual issues.
 
-See [All about Timing: A quick look at metrics for LLM serving](https://isaac-chung.github.io/blog/llm-serving) for a good overview of other metrics you may want to compare when running Ollama.
+See [All about Timing: A quick look at metrics for LLM serving](https://isaac-chung.github.io/blog/llm-serving) for a good overview of other metrics you may want to compare.
 
 ## Author
 
-This benchmark is based on the upstream project [tabletuser-blogspot/ollama-benchmark](https://github.com/tabletuser-blogspot/ollama-benchmark), and is maintained by Jeff Geerling.
+This benchmark was originally based on the upstream project [tabletuser-blogspot/ollama-benchmark](https://github.com/tabletuser-blogspot/ollama-benchmark), and is maintained by Jeff Geerling.
