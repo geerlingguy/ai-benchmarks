@@ -110,11 +110,12 @@ Options:
 | [Pi 500+ - 16GB (Intel Arc B580<sup>1</sup>)](https://github.com/geerlingguy/ollama-benchmark/issues/26) | GPU | 47.38 Tokens/s | 146 W |
 | [Pi 500+ - 16GB (AMD RX 7900 XT<sup>1</sup>)](https://github.com/geerlingguy/ollama-benchmark/issues/23) | GPU | 108.58 Tokens/s | 315 W |
 | [Pi 500+ - 16GB (AMD RX 9070 XT<sup>1</sup>)](https://github.com/geerlingguy/ollama-benchmark/issues/25) | GPU | 89.63 Tokens/s | 304 W |
+| [HiFive Premier P550 (AMD RX 580)](https://github.com/geerlingguy/ollama-benchmark/issues/20) | GPU | 36.23 Tokens/s | 150 W |
+| [HiFive Premier P550 (4-core RISC-V)](https://github.com/geerlingguy/ollama-benchmark/issues/17) | CPU | 0.24 Tokens/s | 13.5 W |
+| [DC-ROMA Mainboard II (8-core RISC-V)](https://github.com/geerlingguy/ollama-benchmark/issues/28) | CPU | 0.31 Tokens/s | 30.6 W |
 | [M4 Mac mini (10 core - 32GB)](https://github.com/geerlingguy/ollama-benchmark/issues/2) | GPU | 41.31 Tokens/s | 30.1 W |
 | M1 Max Mac Studio (10 core - 64GB) | GPU | 59.38 Tokens/s | N/A |
 | [M1 Ultra (48 GPU Core) 64GB](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU | 108.67 Tokens/s | N/A |
-| [HiFive Premier P550 (4-core RISC-V)](https://github.com/geerlingguy/ollama-benchmark/issues/20) | CPU | 0.24 Tokens/s | 13.5 W |
-| [DC-ROMA Mainboard II (8-core RISC-V)](https://github.com/geerlingguy/ollama-benchmark/issues/28) | CPU | 0.31 Tokens/s | 30.6 W |
 | [Ryzen 9 7900X (Nvidia 4090)](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU | 237.05 Tokens/s | N/A |
 | [Intel 13900K (Nvidia 5090)](https://github.com/geerlingguy/ollama-benchmark/pull/18) | GPU | 271.40 Tokens/s | N/A |
 | [Intel 13900K (Nvidia 4090)](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU | 216.48 Tokens/s | N/A |
