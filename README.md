@@ -93,6 +93,12 @@ Options:
 | :--- | :--- | :--- | :--- |
 | [AmpereOne A192-32X - 512GB](https://github.com/geerlingguy/ollama-benchmark/issues/10) | CPU | 4.18 Tokens/s | 477 W |
 
+### Llama 3.1:70b
+
+| System | CPU/GPU | Eval Rate | Power (Peak) |
+| :--- | :--- | :--- | :--- |
+| [Framework Desktop Mainboard 395+](https://github.com/geerlingguy/ai-benchmarks/issues/21) | CPU | 4.97 Tokens/s | 133 W |
+
 ### Llama 3.2:3b
 
 | System | CPU/GPU | Eval Rate | Power (Peak) |
