@@ -84,6 +84,7 @@ Options:
 | [GMKtek G3 Plus (Intel N150) - 16GB](https://github.com/geerlingguy/ollama-benchmark/issues/12) | CPU | 2.13 Tokens/s | 30.3 W |
 | [Radxa Orion O6 - 16GB](https://github.com/geerlingguy/ollama-benchmark/issues/13) | CPU | 4.33 Tokens/s | 34.7 W |
 | [Radxa Orion O6 - 16GB (Nvidia RTX 3080 Ti)](https://github.com/geerlingguy/ollama-benchmark/issues/13) | GPU | 64.58 Tokens/s | 465 W |
+| [Minisforum MS-R1](https://github.com/geerlingguy/ai-benchmarks/issues/32) | CPU | 3.39 Tokens/s | 38.4 W |
 | [M1 Ultra (48 GPU Core) 64GB](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU | 35.89 Tokens/s | N/A |
 | [Framework Mainboard (128GB)](https://github.com/geerlingguy/ollama-benchmark/issues/21#issuecomment-3164567688) | CPU | 11.37 Tokens/s | 140W |
 
@@ -98,6 +99,7 @@ Options:
 | System | CPU/GPU | Eval Rate | Power (Peak) |
 | :--- | :--- | :--- | :--- |
 | [Framework Desktop Mainboard 395+](https://github.com/geerlingguy/ai-benchmarks/issues/21) | CPU | 4.97 Tokens/s | 133 W |
+| [Minisforum MS-R1](https://github.com/geerlingguy/ai-benchmarks/issues/32) | CPU | 0.77 Tokens/s | 38.2 W |
 
 ### Llama 3.2:3b
 
@@ -117,6 +119,8 @@ Options:
 | [Pi 500+ - 16GB (Intel Arc B580<sup>1</sup>)](https://github.com/geerlingguy/ollama-benchmark/issues/26) | GPU | 47.38 Tokens/s | 146 W |
 | [Pi 500+ - 16GB (AMD RX 7900 XT<sup>1</sup>)](https://github.com/geerlingguy/ollama-benchmark/issues/23) | GPU | 108.58 Tokens/s | 315 W |
 | [Pi 500+ - 16GB (AMD RX 9070 XT<sup>1</sup>)](https://github.com/geerlingguy/ollama-benchmark/issues/25) | GPU | 89.63 Tokens/s | 304 W |
+| [Minisforum MS-R1](https://github.com/geerlingguy/ai-benchmarks/issues/32) | CPU | 12.12 Tokens/s | 35 W |
+| [Minisforum MS-R1](https://github.com/geerlingguy/ai-benchmarks/issues/32) (Nvidia RTX A2000) | GPU | 71.36 Tokens/s | 94.3 W |
 | [HiFive Premier P550 (AMD RX 580)](https://github.com/geerlingguy/ollama-benchmark/issues/20) | GPU | 36.23 Tokens/s | 150 W |
 | [HiFive Premier P550 (4-core RISC-V)](https://github.com/geerlingguy/ollama-benchmark/issues/17) | CPU | 0.24 Tokens/s | 13.5 W |
 | [DC-ROMA Mainboard II (8-core RISC-V)](https://github.com/geerlingguy/ollama-benchmark/issues/28) | CPU | 0.31 Tokens/s | 30.6 W |
