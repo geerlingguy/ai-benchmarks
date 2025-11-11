@@ -87,6 +87,7 @@ Options:
 | [Minisforum MS-R1](https://github.com/geerlingguy/ai-benchmarks/issues/32) | CPU | 3.39 Tokens/s | 38.4 W |
 | [M1 Ultra (48 GPU Core) 64GB](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU | 35.89 Tokens/s | N/A |
 | [Framework Mainboard (128GB)](https://github.com/geerlingguy/ollama-benchmark/issues/21#issuecomment-3164567688) | CPU | 11.37 Tokens/s | 140W |
+| [M1 Max MacBook Pro (10 core - 32GB)](https://github.com/geerlingguy/ai-benchmarks/pull/30) | GPU | 33.95 Tokens/s | N/A |
 
 ### DeepSeek R1 671b
 
@@ -126,6 +127,7 @@ Options:
 | [DC-ROMA Mainboard II (8-core RISC-V)](https://github.com/geerlingguy/ollama-benchmark/issues/28) | CPU | 0.31 Tokens/s | 30.6 W |
 | [M4 Mac mini (10 core - 32GB)](https://github.com/geerlingguy/ollama-benchmark/issues/2) | GPU | 41.31 Tokens/s | 30.1 W |
 | M1 Max Mac Studio (10 core - 64GB) | GPU | 59.38 Tokens/s | N/A |
+| [M1 Max MacBook Pro (10 core - 32GB)](https://github.com/geerlingguy/ai-benchmarks/pull/30) | GPU | 80.20 Tokens/s | N/A |
 | [M1 Ultra (48 GPU Core) 64GB](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU | 108.67 Tokens/s | N/A |
 | [Dell Optiplex 780 (C2Q Q8400)](https://github.com/geerlingguy/ai-benchmarks/issues/31) | CPU | 1.09 Tokens/s | 146 W |
 | [Ryzen 9 7900X (Nvidia 4090)](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU | 237.05 Tokens/s | N/A |
