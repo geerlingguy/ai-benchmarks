@@ -85,6 +85,7 @@ Options:
 | [Radxa Orion O6 - 16GB](https://github.com/geerlingguy/ollama-benchmark/issues/13) | CPU | 4.33 Tokens/s | 34.7 W |
 | [Radxa Orion O6 - 16GB (Nvidia RTX 3080 Ti)](https://github.com/geerlingguy/ollama-benchmark/issues/13) | GPU | 64.58 Tokens/s | 465 W |
 | [Minisforum MS-R1](https://github.com/geerlingguy/ai-benchmarks/issues/32) | CPU | 3.39 Tokens/s | 38.4 W |
+| [Framework 13 (Ryzen AI 5 340 16GB)](https://github.com/geerlingguy/ai-benchmarks/issues/33) | CPU | 5.83 Tokens/s | 50.4W |
 | [M1 Ultra (48 GPU Core) 64GB](https://github.com/geerlingguy/ollama-benchmark/pull/11) | GPU | 35.89 Tokens/s | N/A |
 | [Framework Mainboard (128GB)](https://github.com/geerlingguy/ollama-benchmark/issues/21#issuecomment-3164567688) | CPU | 11.37 Tokens/s | 140W |
 
@@ -139,6 +140,7 @@ Options:
 | [System76 Thelio Astra (Nvidia A4000)](https://github.com/geerlingguy/ollama-benchmark/issues/5) | GPU | 90.92 Tokens/s | 244 W |
 | [System76 Thelio Astra (AMD Pro W7700<sup>1</sup>)](https://github.com/geerlingguy/ollama-benchmark/issues/5) | GPU | 89.31 Tokens/s | 261 W |
 | [AmpereOne A192-32X (512GB)](https://github.com/geerlingguy/ollama-benchmark/issues/10) | CPU | 23.52 Tokens/s | N/A |
+| [Framework 13 (Ryzen AI 5 340)](https://github.com/geerlingguy/ai-benchmarks/issues/33) | CPU | 23.81 Tokens/s | 51.1W |
 | [Framework Mainboard (128GB)](https://github.com/geerlingguy/ollama-benchmark/issues/21#issuecomment-3164568218) | GPU | 88.14 Tokens/s | 133W |
 
 ### Llama 3.1:70b
