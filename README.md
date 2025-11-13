@@ -95,13 +95,6 @@ Options:
 | :--- | :--- | :--- | :--- |
 | [AmpereOne A192-32X - 512GB](https://github.com/geerlingguy/ai-benchmarks/issues/10) | CPU | 4.18 Tokens/s | 477 W |
 
-### Llama 3.1:70b
-
-| System | CPU/GPU | Eval Rate | Power (Peak) |
-| :--- | :--- | :--- | :--- |
-| [Framework Desktop Mainboard 395+](https://github.com/geerlingguy/ai-benchmarks/issues/21) | CPU | 4.97 Tokens/s | 133 W |
-| [Minisforum MS-R1](https://github.com/geerlingguy/ai-benchmarks/issues/32) | CPU | 0.77 Tokens/s | 38.2 W |
-
 ### Llama 3.2:3b
 
 | System | CPU/GPU | Eval Rate | Power (Peak) |
@@ -150,7 +143,8 @@ Options:
 | M1 Max Mac Studio (10 core - 64GB) | GPU | 7.25 Tokens/s | N/A |
 | [Ryzen 9 7900X (Nvidia 4090)](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU/CPU | 3.10 Tokens/s | N/A |
 | [AmpereOne A192-32X (512GB)](https://github.com/geerlingguy/ai-benchmarks/issues/10) | CPU | 3.86 Tokens/s | N/A |
-| [Framework Mainboard (128GB)](https://github.com/geerlingguy/ai-benchmarks/issues/21#issuecomment-3164570464) | GPU | 4.47 Tokens/s | 139W |
+| [Framework Desktop Mainboard (395+)](https://github.com/geerlingguy/ai-benchmarks/issues/21) | GPU/CPU | 4.97 Tokens/s | 133 W |
+| [Minisforum MS-R1](https://github.com/geerlingguy/ai-benchmarks/issues/32) | CPU | 0.77 Tokens/s | 38.2 W |
 | [Raspberry Pi CM5 Cluster (10x 16GB)](https://github.com/geerlingguy/beowulf-ai-cluster/issues/6#issuecomment-3238338502) | CPU | 0.85 Tokens/s | 70W |
 
 <sup>1</sup> These GPUs were tested using `llama.cpp` with Vulkan support.
