@@ -83,6 +83,7 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 | :--- | :--- | :--- | :--- |
 | [Radxa Orion O6 - 16GB (Nvidia RTX 3080 Ti)](https://github.com/geerlingguy/ai-benchmarks/issues/13) | GPU | 64.58 Tokens/s | 465 W |
 | [M1 Ultra (48 GPU Core) 64GB](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 35.89 Tokens/s | N/A |
+| [Dell Pro Max with GB10 (Nvidia Spark)](https://github.com/geerlingguy/ai-benchmarks/issues/34) | GPU | 23.92 Tokens/s | 138.4 W |
 | [Pi 5 - 16GB (AMD Pro W7700<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/9) | GPU | 19.90 Tokens/s | 164 W |
 | [Framework Mainboard (128GB)](https://github.com/geerlingguy/ai-benchmarks/issues/21#issuecomment-3164567688) | CPU | 11.37 Tokens/s | 140W |
 | [Framework 13 (Ryzen AI 5 340 16GB)](https://github.com/geerlingguy/ai-benchmarks/issues/33) | CPU | 5.83 Tokens/s | 50.4W |
@@ -110,6 +111,7 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 | [Ryzen 9 9950X (AMD 7900 XT)](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 131.2 Tokens/s | N/A |
 | [M1 Ultra (48 GPU Core) 64GB](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 108.67 Tokens/s | N/A |
 | [Pi 500+ - 16GB (AMD RX 7900 XT<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/23) | GPU | 108.58 Tokens/s | 315 W |
+| [Dell Pro Max with GB10 (Nvidia Spark)](https://github.com/geerlingguy/ai-benchmarks/issues/34) | GPU | 97.93 Tokens/s | 128.5 W |
 | [System76 Thelio Astra (Nvidia A4000)](https://github.com/geerlingguy/ai-benchmarks/issues/5) | GPU | 90.92 Tokens/s | 244 W |
 | [Pi 500+ - 16GB (AMD RX 9070 XT<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/25) | GPU | 89.63 Tokens/s | 304 W |
 | [System76 Thelio Astra (AMD Pro W7700<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/5) | GPU | 89.31 Tokens/s | 261 W |
@@ -144,6 +146,7 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 | :--- | :--- | :--- | :--- |
 | M1 Max Mac Studio (10 core - 64GB) | GPU | 7.25 Tokens/s | N/A |
 | [Framework Desktop Mainboard (395+)](https://github.com/geerlingguy/ai-benchmarks/issues/21) | GPU/CPU | 4.97 Tokens/s | 133 W |
+| [Dell Pro Max with GB10 (Nvidia Spark)](https://github.com/geerlingguy/ai-benchmarks/issues/34) | GPU | 4.71 Tokens/s | 156 W |
 | [AmpereOne A192-32X (512GB)](https://github.com/geerlingguy/ai-benchmarks/issues/10) | CPU | 3.86 Tokens/s | N/A |
 | [Ryzen 9 7900X (Nvidia 4090)](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU/CPU | 3.10 Tokens/s | N/A |
 | [Raspberry Pi CM5 Cluster (10x 16GB)](https://github.com/geerlingguy/beowulf-ai-cluster/issues/6#issuecomment-3238338502) | CPU | 0.85 Tokens/s | 70W |
