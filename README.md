@@ -82,6 +82,7 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 | System | CPU/GPU | Eval Rate | Power (Peak) |
 | :--- | :--- | :--- | :--- |
 | [Radxa Orion O6 - 16GB (Nvidia RTX 3080 Ti)](https://github.com/geerlingguy/ai-benchmarks/issues/13) | GPU | 64.58 Tokens/s | 465 W |
+| [Intel 265K Custom PC (AMD Radeon AI Pro R9700)](https://github.com/geerlingguy/ai-benchmarks/issues/35) | GPU | 53.72 Tokens/s | 330.8 W |
 | [M1 Ultra (48 GPU Core) 64GB](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 35.89 Tokens/s | N/A |
 | [Dell Pro Max with GB10 (Nvidia Spark)](https://github.com/geerlingguy/ai-benchmarks/issues/34) | GPU | 23.92 Tokens/s | 138.4 W |
 | [Pi 5 - 16GB (AMD Pro W7700<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/9) | GPU | 19.90 Tokens/s | 164 W |
@@ -108,6 +109,7 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 | [Intel 13900K (Nvidia 4090)](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 216.48 Tokens/s | N/A |
 | [Ryzen 9 7950X (Nvidia 4080)](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 204.45 Tokens/s | N/A |
 | [Ryzen 9 7950X (Nvidia 4070 Ti Super)](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 198.95 Tokens/s | N/A |
+| [Intel 265K Custom PC (AMD Radeon AI Pro R9700)](https://github.com/geerlingguy/ai-benchmarks/issues/35) | GPU | 195.91 Tokens/s | 333.8 W |
 | [Ryzen 9 5950X (Nvidia 4070)](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 160.72 Tokens/s | N/A |
 | [Ryzen 9 9950X (AMD 7900 XT)](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 131.2 Tokens/s | N/A |
 | [M1 Ultra (48 GPU Core) 64GB](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 108.67 Tokens/s | N/A |
