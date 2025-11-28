@@ -10,11 +10,13 @@ Benchmarking AI models can be a bit daunting, because you have to deal with hard
   2. _How_ to benchmark the models (what context size, with or without features like flash attention, etc.?).
   3. What _results_ to worry about (prompt processing speed, generated tokens per second, etc.?)
 
-## Llama.cpp Benchmark
+## Llama.cpp Benchmarks
 
 _Most_ of the time I rely on llama.cpp, as it is more broadly compatible, works with more models on more systems, and incorporates features that are useful for hardware acceleration more quickly than Ollama. For example, [Vulkan was supported for years in llama.cpp prior to Ollama supporting it](https://github.com/ollama/ollama/issues/2033). Vulkan enables many AMD and Intel GPUs (as well as other Vulkan-compatible iGPUs) to work for LLM inference.
 
-Right now I don't have a particular _script_ to assist with my llama.cpp benchmarks, I just pull a model manually, then use llama.cpp's built-in `llama-bench` utility:
+The repository includes a [Pyinfra](https://pyinfra.com) script to run either `llama.cpp` or `ollama` benchmarks with any given LLM.
+
+If you already have llama.cpp installed, you can run a quick benchmark using the `llama-bench` tool directly:
 
 ```
 # Download a model (gguf)
@@ -24,13 +26,15 @@ cd models && wget https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/re
 ./build/bin/llama-bench -m models/Llama-3.2-3B-Instruct-Q4_K_M.gguf -n 128 -p 512,4096 -pg 4096,128 -ngl 99 -r 2
 ```
 
-You can change various `llama-bench` options to test different prompt and context sizes, enable or disable features like MMIO and Flash Attention, etc.
+But if you want to have llama.cpp compiled automatically, and run one or many `llama-bench` runs with customizable options, you can use Pyinfra to do so:
 
-I generally start with Llama 3.2:3B Q4_K_M because it's a small model (only 2GB), and it doesn't crash even with smaller systems like SBCs.
+  1. Make a copy of the inventory file and edit it to point to your server (or localhost): `cp example.inventory.py inventory.py`
+  2. Edit the variables inside `group_data/all.py` to your liking.
+  3. Run the benchmarks: `pyinfra inventory.py ai-benchmarks.py -y`
 
 ## Ollama Benchmark
 
-The first and simplest benchmarks I often run—at least on systems where Ollama is supported and runs well—is my `obench.sh` script. It can run a predefined benchmark on Ollama one to many times, and generate an average score.
+On systems where Ollama is supported and runs well, you can run the `obench.sh` script directly. It can run a predefined benchmark on Ollama one to many times, and generate an average score.
 
 For a quick installation of Ollama, try:
 
@@ -83,6 +87,7 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 | :--- | :--- | :--- | :--- |
 | [Radxa Orion O6 - 16GB (Nvidia RTX 3080 Ti)](https://github.com/geerlingguy/ai-benchmarks/issues/13) | GPU | 64.58 Tokens/s | 465 W |
 | [Intel 265K Custom PC (AMD Radeon AI Pro R9700)](https://github.com/geerlingguy/ai-benchmarks/issues/35) | GPU | 53.72 Tokens/s | 330.8 W |
+| [Pi CM5 - 16GB (Nvidia RTX A4000<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/36) | GPU | 36.21 Tokens/s | 162.8W |
 | [M1 Ultra (48 GPU Core) 64GB](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 35.89 Tokens/s | N/A |
 | [Dell Pro Max with GB10 (Nvidia Spark)](https://github.com/geerlingguy/ai-benchmarks/issues/34) | GPU | 23.92 Tokens/s | 138.4 W |
 | [Pi 5 - 16GB (AMD Pro W7700<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/9) | GPU | 19.90 Tokens/s | 164 W |
@@ -111,6 +116,8 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 | [Ryzen 9 7950X (Nvidia 4070 Ti Super)](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 198.95 Tokens/s | N/A |
 | [Intel 265K Custom PC (AMD Radeon AI Pro R9700)](https://github.com/geerlingguy/ai-benchmarks/issues/35) | GPU | 195.91 Tokens/s | 333.8 W |
 | [Ryzen 9 5950X (Nvidia 4070)](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 160.72 Tokens/s | N/A |
+| [Intel 265K Custom PC (Nvidia RTX A4000)](https://github.com/geerlingguy/ai-benchmarks/issues/36) | GPU | 149.44 Tokens/s | 269.2 W |
+| [Pi CM5 - 16GB (Nvidia RTX A4000<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/36) | GPU | 134.47 Tokens/s | 162.7W |
 | [Ryzen 9 9950X (AMD 7900 XT)](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 131.2 Tokens/s | N/A |
 | [M1 Ultra (48 GPU Core) 64GB](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 108.67 Tokens/s | N/A |
 | [Pi 500+ - 16GB (AMD RX 7900 XT<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/23) | GPU | 108.58 Tokens/s | 315 W |
