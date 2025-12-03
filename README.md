@@ -2,9 +2,11 @@
 
 [![.github/workflows/shellcheck.yaml](https://github.com/geerlingguy/ai-benchmarks/actions/workflows/shellcheck.yaml/badge.svg)](https://github.com/geerlingguy/ai-benchmarks/actions/workflows/shellcheck.yaml)
 
-This repository contains AI/LLM benchmarks and benchmarking data compiled by Jeff Geerling, using a combination of [Ollama](https://ollama.com) and [llama.cpp](https://github.com/ggml-org/llama.cpp).
+This repository contains AI/LLM benchmarks _for single node configurations_ and benchmarking data compiled by Jeff Geerling, using [llama.cpp](https://github.com/ggml-org/llama.cpp) and [Ollama](https://ollama.com).
 
-Benchmarking AI models can be a bit daunting, because you have to deal with hardware issues, OS issues, driver issues, stability issues... and that's all before deciding on:
+**For automated AI cluster benchmarking**, see [Beowulf AI Cluster](https://github.com/geerlingguy/beowulf-ai-cluster). Results from that testing are also listed in this README file below.
+
+Benchmarking AI models is daunting, because you have to deal with hardware issues, OS issues, driver issues, stability issues... and that's all before deciding on:
 
   1. What _models_ to benchmark (which quantization, what particular gguf, etc.?)
   2. _How_ to benchmark the models (what context size, with or without features like flash attention, etc.?).
@@ -50,19 +52,13 @@ Verify you can run `ollama` with a given model:
 ollama run llama3.2:3b
 ```
 
-Then run this benchmark script:
-
-```
-./obench.sh
-```
-
-Uninstall Ollama following the [official uninstall instructions](https://github.com/ollama/ollama/blob/main/docs/linux.md#uninstall).
-
-For the benchmarks I save in this project, I usually run the following benchmark command, which generates an average from three runs and prints it in markdown:
+Then run this benchmark script, for three runs, summarizing the data in a Markdown table:
 
 ```
 ./obench.sh -m llama3.2:3b -c 3 --markdown
 ```
+
+Uninstall Ollama following the [official uninstall instructions](https://github.com/ollama/ollama/blob/main/docs/linux.md#uninstall).
 
 ### Ollama benchmark CLI Options
 
@@ -79,7 +75,7 @@ Options:
 
 ## Findings
 
-All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate', in descending order.
+All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate', in descending order. Eventually I may find a better way to sort these findings, and include more data. For now, click through the System name to find all the test details.
 
 ### DeepSeek R1 14b
 
@@ -184,4 +180,4 @@ See [All about Timing: A quick look at metrics for LLM serving](https://isaac-ch
 
 ## Author
 
-This benchmark was originally based on the upstream project [tabletuser-blogspot/ollama-benchmark](https://github.com/tabletuser-blogspot/ollama-benchmark), and is maintained by Jeff Geerling.
+This benchmark was originally based on an upstream project focused only on Ollama [tabletuser-blogspot/ollama-benchmark](https://github.com/tabletuser-blogspot/ollama-benchmark). This fork is maintained by [Jeff Geerling](https://www.jeffgeerling.com).
