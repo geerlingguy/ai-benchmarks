@@ -1,4 +1,4 @@
-# AI/LLM Benchmarks (Ollama and llama.cpp)
+# AI/LLM Benchmarks (llama.cpp and Ollama)
 
 [![.github/workflows/shellcheck.yaml](https://github.com/geerlingguy/ai-benchmarks/actions/workflows/shellcheck.yaml/badge.svg)](https://github.com/geerlingguy/ai-benchmarks/actions/workflows/shellcheck.yaml)
 
