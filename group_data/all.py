@@ -22,6 +22,10 @@ llama_cpp_models = {
     'urls': ['https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_K_M.gguf'],
     'size_in_gb': 1.9,
   },
+  # 'llama-2-7b.Q4_K_M.gguf': {
+  #   'urls': ['https://huggingface.co/TheBloke/Llama-2-7B-GGUF/resolve/main/llama-2-7b.Q4_K_M.gguf'],
+  #   'size_in_gb': 4.1,
+  # },
   # 'llama-2-13b.Q4_K_M.gguf': {
   #   'urls': ['https://huggingface.co/TheBloke/Llama-2-13B-GGUF/resolve/main/llama-2-13b.Q4_K_M.gguf'],
   #   'size_in_gb': 7.4,

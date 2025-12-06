@@ -103,6 +103,17 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 | :--- | :--- | :--- | :--- |
 | [AmpereOne A192-32X - 512GB](https://github.com/geerlingguy/ai-benchmarks/issues/10) | CPU | 4.18 Tokens/s | 477 W |
 
+### gpt-oss 20b
+
+| System | CPU/GPU | Eval Rate | Power (Peak) |
+| :--- | :--- | :--- | :--- |
+| [Intel 265K Custom PC (AMD Radeon AI Pro R9700)](https://github.com/geerlingguy/ai-benchmarks/issues/35) | GPU | 163.26 Tokens/s | 332.9W |
+| [Pi CM5 - 16GB (Nvidia RTX 3080 Ti<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/39) | GPU | 143.73 Tokens/s | 434W |
+| [Intel 265K Custom PC (Nvidia RTX A4000)](https://github.com/geerlingguy/ai-benchmarks/issues/36) | GPU | 93.55 Tokens/s | 199.4W |
+| [Pi CM5 - 16GB (Nvidia RTX A4000<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/36) | GPU | 90.68 Tokens/s | 163W |
+| [Dell Pro Max with GB10 (Nvidia Spark)](https://github.com/geerlingguy/ai-benchmarks/issues/34) | GPU | 87.97 Tokens/s | 122.8W |
+| [Pi CM5 - 16GB (Nvidia RTX 3060<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/40) | GPU | 79.14 Tokens/s | 180.9W |
+
 ### Llama 3.2:3b
 
 | System | CPU/GPU | Eval Rate | Power (Peak) |
