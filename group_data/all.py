@@ -9,6 +9,7 @@ llama_cpp_build_opts = '-DGGML_VULKAN=1'
 # llama_cpp_build_opts = '-DGGML_CUDA=1 -DCMAKE_CUDA_COMPILER=/usr/local/cuda/bin/nvcc'
 
 # https://github.com/ggml-org/llama.cpp/blob/master/tools/llama-bench/README.md
+# Consider adding '-fa 1 --mmap 0' on memory-constrained systems
 llama_bench_opts = '-n 128 -p 512,4096 -pg 4096,128 -ngl 99 -r 2'
 
 # Select which models to benchmark. Ideally they will run entirely in VRAM.

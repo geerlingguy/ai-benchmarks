@@ -113,6 +113,7 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 | [Pi CM5 - 16GB (Nvidia RTX A4000<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/36) | GPU | 90.68 Tokens/s | 163W |
 | [Dell Pro Max with GB10 (Nvidia Spark)](https://github.com/geerlingguy/ai-benchmarks/issues/34) | GPU | 87.97 Tokens/s | 122.8W |
 | [Pi CM5 - 16GB (Nvidia RTX 3060<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/40) | GPU | 79.14 Tokens/s | 180.9W |
+| [Pi CM5 - 16GB (AMD Radeon AI Pro R9700<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/35) | GPU | 19.59 Tokens/s | 318.4W |
 
 ### Llama 3.2:3b
 
