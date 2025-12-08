@@ -12,6 +12,17 @@ Benchmarking AI models is daunting, because you have to deal with hardware issue
   2. _How_ to benchmark the models (what context size, with or without features like flash attention, etc.?).
   3. What _results_ to worry about (prompt processing speed, generated tokens per second, etc.?)
 
+## OS / Distro Support
+
+Most Linux distributions should Just Work™. However, this project is most frequently tested against sytems running:
+
+  - Debian Linux
+  - Ubuntu Linux
+  - Fedora Linux
+  - macOS
+
+**For macOS**: This project assumes you already have the build dependencies `cmake`, `ninja`, `wget`, and `curl` installed. These can be installed with Homebrew using `brew install cmake ninja wget curl`.
+
 ## Llama.cpp Benchmarks
 
 _Most_ of the time I rely on llama.cpp, as it is more broadly compatible, works with more models on more systems, and incorporates features that are useful for hardware acceleration more quickly than Ollama. For example, [Vulkan was supported for years in llama.cpp prior to Ollama supporting it](https://github.com/ollama/ollama/issues/2033). Vulkan enables many AMD and Intel GPUs (as well as other Vulkan-compatible iGPUs) to work for LLM inference.
@@ -123,7 +134,7 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 | [Intel 265K Custom PC (Nvidia RTX 3080 Ti)](https://github.com/geerlingguy/ai-benchmarks/issues/39) | GPU | 263.24 Tokens/s | 495 W |
 | [Ryzen 9 7900X (Nvidia 4090)](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 237.05 Tokens/s | N/A |
 | [Intel 13900K (Nvidia 4090)](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 216.48 Tokens/s | N/A |
-| [Pi CM5 - 16GB (Nvidia RTX 3080 Ti<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/39) | GPU 208.50 Tokens/s | 394W |
+| [Pi CM5 - 16GB (Nvidia RTX 3080 Ti<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/39) | GPU | 208.50 Tokens/s | 394W |
 | [Ryzen 9 7950X (Nvidia 4080)](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 204.45 Tokens/s | N/A |
 | [Ryzen 9 7950X (Nvidia 4070 Ti Super)](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 198.95 Tokens/s | N/A |
 | [Intel 265K Custom PC (AMD Radeon AI Pro R9700)](https://github.com/geerlingguy/ai-benchmarks/issues/35) | GPU | 195.91 Tokens/s | 333.8 W |

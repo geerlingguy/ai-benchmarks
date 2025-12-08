@@ -2,7 +2,7 @@ import os
 import sys
 from pyinfra import host, logger
 from pyinfra.facts.files import File
-from pyinfra.facts.hardware import Memory
+from pyinfra.facts.hardware import Cpus, Memory
 from pyinfra.facts.server import Arch, Command, Home, LinuxName, User
 from pyinfra.operations import apt, dnf, files, git, python, server
 from urllib.parse import urlparse
@@ -11,6 +11,7 @@ from urllib.parse import urlparse
 assert sys.version_info >= (3, 10)
 
 current_user=host.get_fact(User)
+current_group=host.get_fact(Command, 'id -gn')
 host_ram_size=host.get_fact(Memory)
 working_dir=host.get_fact(Home) + "/Downloads"
 linux_name=host.get_fact(LinuxName)
@@ -42,7 +43,7 @@ files.directory(
     path=working_dir,
     present=True,
     user=current_user,
-    group=current_user,
+    group=current_group,
     _sudo=True,
 )
 
@@ -80,13 +81,14 @@ if host.data.ai_benchmark == 'llama.cpp':
     )
 
     llama_cpp_build_opts=host.data.llama_cpp_build_opts
-    num_cores = host.get_fact(Command, command="nproc --all")
+    num_cores = host.get_fact(Cpus)
     server.shell(
         name="Build llama.cpp",
         commands=[
             "cd {}/llama.cpp && cmake -B build {}".format(working_dir, llama_cpp_build_opts),
             "cd {}/llama.cpp && cmake --build build --config Release -j {}".format(working_dir, num_cores)
-        ]
+        ],
+        _env={"PATH": "/usr/local/bin:/opt/homebrew/bin:$PATH"}
     )
 
     llama_bench_opts=host.data.llama_bench_opts
