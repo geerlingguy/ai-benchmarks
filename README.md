@@ -96,6 +96,7 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 | [Pi CM5 - 16GB (Nvidia RTX 3080 Ti<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/39) | GPU | 67.74 Tokens/s | 476W |
 | [Radxa Orion O6 - 16GB (Nvidia RTX 3080 Ti)](https://github.com/geerlingguy/ai-benchmarks/issues/13) | GPU | 64.58 Tokens/s | 465 W |
 | [Intel 265K Custom PC (AMD Radeon AI Pro R9700)](https://github.com/geerlingguy/ai-benchmarks/issues/35) | GPU | 53.72 Tokens/s | 330.8 W |
+| [Mac Studio (M3 Ultra 512GB)](https://github.com/geerlingguy/ai-benchmarks/issues/42) | GPU | 51.85 Tokens/s | 227W |
 | [Pi CM5 - 16GB (Nvidia RTX A4000<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/36) | GPU | 36.21 Tokens/s | 162.8W |
 | [M1 Ultra (48 GPU Core) 64GB](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 35.89 Tokens/s | N/A |
 | [Dell Pro Max with GB10 (Nvidia Spark)](https://github.com/geerlingguy/ai-benchmarks/issues/34) | GPU | 23.92 Tokens/s | 138.4 W |
@@ -112,6 +113,7 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 
 | System | CPU/GPU | Eval Rate | Power (Peak) |
 | :--- | :--- | :--- | :--- |
+| [Mac Studio (M3 Ultra 512GB)](https://github.com/geerlingguy/ai-benchmarks/issues/42) | GPU | 19.89 Tokens/s | 261.8W |
 | [AmpereOne A192-32X - 512GB](https://github.com/geerlingguy/ai-benchmarks/issues/10) | CPU | 4.18 Tokens/s | 477 W |
 
 ### gpt-oss 20b
@@ -120,6 +122,7 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 | :--- | :--- | :--- | :--- |
 | [Intel 265K Custom PC (AMD Radeon AI Pro R9700)](https://github.com/geerlingguy/ai-benchmarks/issues/35) | GPU | 163.26 Tokens/s | 332.9W |
 | [Pi CM5 - 16GB (Nvidia RTX 3080 Ti<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/39) | GPU | 143.73 Tokens/s | 434W |
+| [Mac Studio (M3 Ultra 512GB)](https://github.com/geerlingguy/ai-benchmarks/issues/42) | GPU | 115.29 Tokens/s | 227W |
 | [Intel 265K Custom PC (Nvidia RTX A4000)](https://github.com/geerlingguy/ai-benchmarks/issues/36) | GPU | 93.55 Tokens/s | 199.4W |
 | [Pi CM5 - 16GB (Nvidia RTX A4000<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/36) | GPU | 90.68 Tokens/s | 163W |
 | [Dell Pro Max with GB10 (Nvidia Spark)](https://github.com/geerlingguy/ai-benchmarks/issues/34) | GPU | 87.97 Tokens/s | 122.8W |
@@ -139,6 +142,7 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 | [Ryzen 9 7950X (Nvidia 4070 Ti Super)](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 198.95 Tokens/s | N/A |
 | [Intel 265K Custom PC (AMD Radeon AI Pro R9700)](https://github.com/geerlingguy/ai-benchmarks/issues/35) | GPU | 195.91 Tokens/s | 333.8 W |
 | [Ryzen 9 5950X (Nvidia 4070)](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 160.72 Tokens/s | N/A |
+| [Mac Studio (M3 Ultra 512GB)](https://github.com/geerlingguy/ai-benchmarks/issues/42) | GPU | 154.60 Tokens/s | 223W |
 | [Intel 265K Custom PC (Nvidia RTX A4000)](https://github.com/geerlingguy/ai-benchmarks/issues/36) | GPU | 149.44 Tokens/s | 269.2 W |
 | [Pi CM5 - 16GB (Nvidia RTX A4000<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/36) | GPU | 134.47 Tokens/s | 162.7W |
 | [Ryzen 9 9950X (AMD 7900 XT)](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 131.2 Tokens/s | N/A |
@@ -178,6 +182,7 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 
 | System | CPU/GPU | Eval Rate | Power (Peak) |
 | :--- | :--- | :--- | :--- |
+| [Mac Studio (M3 Ultra 512GB)](https://github.com/geerlingguy/ai-benchmarks/issues/42) | GPU | 14.08 Tokens/s | 243W |
 | M1 Max Mac Studio (10 core - 64GB) | GPU | 7.25 Tokens/s | N/A |
 | [Framework Desktop Mainboard (395+)](https://github.com/geerlingguy/ai-benchmarks/issues/21) | GPU/CPU | 4.97 Tokens/s | 133 W |
 | [Dell Pro Max with GB10 (Nvidia Spark)](https://github.com/geerlingguy/ai-benchmarks/issues/34) | GPU | 4.71 Tokens/s | 156 W |
@@ -192,6 +197,7 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 
 | System | CPU/GPU | Eval Rate | Power (Peak) |
 | :--- | :--- | :--- | :--- |
+| [Mac Studio (M3 Ultra 512GB)](https://github.com/geerlingguy/ai-benchmarks/issues/42) | GPU | 1.96 Tokens/s | 256.4W |
 | [AmpereOne A192-32X (512GB)](https://github.com/geerlingguy/ai-benchmarks/issues/10) | CPU | 0.90 Tokens/s | N/A |
 | [Framework Mainboard Cluster (512GB)](https://github.com/geerlingguy/ai-benchmarks/issues/21#issuecomment-3164569199) | GPU | 0.71 Tokens/s | N/A |
 
