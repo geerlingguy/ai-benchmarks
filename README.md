@@ -92,6 +92,8 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 
 | System | CPU/GPU | Eval Rate | Power (Peak) |
 | :--- | :--- | :--- | :--- |
+| [Intel 265K Custom PC (Nvidia RTX 4090)](https://github.com/geerlingguy/ai-benchmarks/issues/43) | GPU | 92.49 Tokens/s | 464.2 W |
+| [Pi CM5 - 16GB (Nvidia RTX 4090<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/43) | GPU | 83.31 Tokens/s | 397.5W |
 | [Intel 265K Custom PC (Nvidia RTX 3080 Ti)](https://github.com/geerlingguy/ai-benchmarks/issues/39) | GPU | 70.74 Tokens/s | 495 W |
 | [Pi CM5 - 16GB (Nvidia RTX 3080 Ti<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/39) | GPU | 67.74 Tokens/s | 476W |
 | [Radxa Orion O6 - 16GB (Nvidia RTX 3080 Ti)](https://github.com/geerlingguy/ai-benchmarks/issues/13) | GPU | 64.58 Tokens/s | 465 W |
@@ -120,6 +122,8 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 
 | System | CPU/GPU | Eval Rate | Power (Peak) |
 | :--- | :--- | :--- | :--- |
+| [Intel 265K Custom PC (Nvidia RTX 4090)](https://github.com/geerlingguy/ai-benchmarks/issues/43) | GPU | 279.65 Tokens/s | 509.1 W |
+| [Pi CM5 - 16GB (Nvidia RTX 4090<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/43) | GPU | 189.09 Tokens/s | 322.1W |
 | [Intel 265K Custom PC (AMD Radeon AI Pro R9700)](https://github.com/geerlingguy/ai-benchmarks/issues/35) | GPU | 163.26 Tokens/s | 332.9W |
 | [Pi CM5 - 16GB (Nvidia RTX 3080 Ti<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/39) | GPU | 143.73 Tokens/s | 434W |
 | [Mac Studio (M3 Ultra 512GB)](https://github.com/geerlingguy/ai-benchmarks/issues/42) | GPU | 115.29 Tokens/s | 227W |
@@ -133,9 +137,11 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 
 | System | CPU/GPU | Eval Rate | Power (Peak) |
 | :--- | :--- | :--- | :--- |
+| [Intel 265K Custom PC (Nvidia RTX 4090)](https://github.com/geerlingguy/ai-benchmarks/issues/43) | GPU | 334.67 Tokens/s | 261.9 W |
 | [Intel 13900K (Nvidia 5090)](https://github.com/geerlingguy/ai-benchmarks/pull/18) | GPU | 271.40 Tokens/s | N/A |
 | [Intel 265K Custom PC (Nvidia RTX 3080 Ti)](https://github.com/geerlingguy/ai-benchmarks/issues/39) | GPU | 263.24 Tokens/s | 495 W |
 | [Ryzen 9 7900X (Nvidia 4090)](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 237.05 Tokens/s | N/A |
+| [Pi CM5 - 16GB (Nvidia RTX 4090<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/43) | GPU | 235.61 Tokens/s | 290.2W |
 | [Intel 13900K (Nvidia 4090)](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 216.48 Tokens/s | N/A |
 | [Pi CM5 - 16GB (Nvidia RTX 3080 Ti<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/39) | GPU | 208.50 Tokens/s | 394W |
 | [Ryzen 9 7950X (Nvidia 4080)](https://github.com/geerlingguy/ai-benchmarks/pull/11) | GPU | 204.45 Tokens/s | N/A |

@@ -5,12 +5,12 @@ ai_benchmark = 'llama.cpp'
 
 # llama.cpp build options.
 # For most GPU-enabled platforms:
-# llama_cpp_build_opts = '-DGGML_VULKAN=1'
+llama_cpp_build_opts = '-DGGML_VULKAN=1'
 # For Nvidia DGX Spark / GB10 systems:
 # llama_cpp_build_opts = '-DGGML_CUDA=1 -DCMAKE_CUDA_COMPILER=/usr/local/cuda/bin/nvcc'
 # For Macs with Apple Silicon:
 # llama_cpp_build_opts = '-DGGML_METAL=ON -DGGML_ACCELERATE=ON'
-llama_cpp_build_opts = '-DGGML_METAL=ON -DGGML_ACCELERATE=ON -DGGML_RPC=ON'
+# llama_cpp_build_opts = '-DGGML_METAL=ON -DGGML_ACCELERATE=ON -DGGML_RPC=ON'
 
 # https://github.com/ggml-org/llama.cpp/blob/master/tools/llama-bench/README.md
 # Consider adding '-fa 1 --mmap 0' on memory-constrained systems
