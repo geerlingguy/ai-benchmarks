@@ -115,6 +115,7 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 | [Framework 13 (Ryzen AI 5 340 16GB)](https://github.com/geerlingguy/ai-benchmarks/issues/33) | CPU | 5.83 Tokens/s | 50.4W |
 | [Radxa Orion O6 - 16GB](https://github.com/geerlingguy/ai-benchmarks/issues/13) | CPU | 4.33 Tokens/s | 34.7W |
 | [Minisforum MS-R1](https://github.com/geerlingguy/ai-benchmarks/issues/32) | CPU | 3.39 Tokens/s | 38.4W |
+| [MetaComputing AI PC Framework 13 Mainboard](https://github.com/geerlingguy/ai-benchmarks/issues/51) | CPU | 3.25 Tokens/s | 32W |
 | [GMKtek G3 Plus (Intel N150) - 16GB](https://github.com/geerlingguy/ai-benchmarks/issues/12) | CPU | 2.13 Tokens/s | 30.3W |
 | [Pi 5 - 16GB](https://github.com/geerlingguy/ai-benchmarks/issues/7) | CPU | 1.20 Tokens/s | 13.0W |
 
@@ -143,6 +144,7 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 | [Intel 265K Custom PC (Nvidia RTX 3060)](https://github.com/geerlingguy/ai-benchmarks/issues/40) | GPU | 83.96 Tokens/s | 229.3W |
 | [Pi CM5 - 16GB (Nvidia RTX 3060<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/40) | GPU | 79.14 Tokens/s | 180.9W |
 | [Pi CM5 - 16GB (AMD Radeon AI Pro R9700<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/35) | GPU | 19.59 Tokens/s | 318.4W |
+| [MetaComputing AI PC Framework 13 Mainboard](https://github.com/geerlingguy/ai-benchmarks/issues/51) | CPU | 8.52 Tokens/s | 27W |
 
 ### Llama 3.2:3b
 
@@ -192,6 +194,7 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 | [AmpereOne A192-32X (512GB)](https://github.com/geerlingguy/ai-benchmarks/issues/10) | CPU | 23.52 Tokens/s | N/A |
 | [Framework 13 (Ryzen AI 5 340)](https://github.com/geerlingguy/ai-benchmarks/issues/33) | CPU | 23.81 Tokens/s | 51.1W |
 | [Pi 500+ - 16GB (Intel Arc A310 ECO<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/29) | GPU | 13.36 Tokens/s | 50W |
+| [MetaComputing AI PC Framework 13 Mainboard](https://github.com/geerlingguy/ai-benchmarks/issues/51) | CPU | 13.10 Tokens/s | 29W |
 | [Minisforum MS-R1](https://github.com/geerlingguy/ai-benchmarks/issues/32) | CPU | 12.12 Tokens/s | 35W |
 | [GMKtec G3 Plus (Intel N150) - 16GB](https://github.com/geerlingguy/ai-benchmarks/issues/12) | CPU | 9.06 Tokens/s | 26.4W |
 | [Pi 500+ - 16GB](https://github.com/geerlingguy/ai-benchmarks/issues/24) | CPU | 5.55 Tokens/s | 13W |
