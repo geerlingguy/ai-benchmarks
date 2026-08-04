@@ -191,6 +191,7 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 | [HiFive Premier P550 (AMD RX 580)](https://github.com/geerlingguy/ai-benchmarks/issues/20) | GPU | 36.23 Tokens/s | 150W |
 | [System76 Thelio Astra (Nvidia A400)](https://github.com/geerlingguy/ai-benchmarks/issues/5) | GPU | 35.51 Tokens/s | 167W |
 | [Pi 500+ - 16GB (Intel Arc Pro B50<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/27) | GPU | 29.80 Tokens/s | 78.5W |
+| [Dell XPS 13 (Intel Core 5 320<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/52) | iGPU | 23.88 Tokens/s | 14W |
 | [AmpereOne A192-32X (512GB)](https://github.com/geerlingguy/ai-benchmarks/issues/10) | CPU | 23.52 Tokens/s | N/A |
 | [Framework 13 (Ryzen AI 5 340)](https://github.com/geerlingguy/ai-benchmarks/issues/33) | CPU | 23.81 Tokens/s | 51.1W |
 | [Pi 500+ - 16GB (Intel Arc A310 ECO<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/29) | GPU | 13.36 Tokens/s | 50W |
