@@ -196,6 +196,7 @@ All resorts are sorted by token generation rate (tg), listed here as 'Eval Rate'
 | [Framework 13 (Ryzen AI 5 340)](https://github.com/geerlingguy/ai-benchmarks/issues/33) | CPU | 23.81 Tokens/s | 51.1W |
 | [Pi 500+ - 16GB (Intel Arc A310 ECO<sup>1</sup>)](https://github.com/geerlingguy/ai-benchmarks/issues/29) | GPU | 13.36 Tokens/s | 50W |
 | [MetaComputing AI PC Framework 13 Mainboard](https://github.com/geerlingguy/ai-benchmarks/issues/51) | CPU | 13.10 Tokens/s | 29W |
+| [Radxa Dragon Q8B](https://github.com/geerlingguy/ai-benchmarks/issues/54) | CPU | 12.30 Tokens/s | 24.3W |
 | [Minisforum MS-R1](https://github.com/geerlingguy/ai-benchmarks/issues/32) | CPU | 12.12 Tokens/s | 35W |
 | [GMKtec G3 Plus (Intel N150) - 16GB](https://github.com/geerlingguy/ai-benchmarks/issues/12) | CPU | 9.06 Tokens/s | 26.4W |
 | [Pi 500+ - 16GB](https://github.com/geerlingguy/ai-benchmarks/issues/24) | CPU | 5.55 Tokens/s | 13W |
